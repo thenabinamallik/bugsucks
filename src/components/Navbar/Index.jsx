@@ -47,7 +47,7 @@ export const Header = () => {
         </a>
 
         <div className='group  flex justify-end rounded-full overflow-hidden'>
-          <div className='h-14 w-14 max-w-screen rounded-full flex border-2 border-green-500/50 backdrop-blur-sm bg-white/10 items-center overflow-hidden whitespace-nowrap origin-right transition-all duration-500 delay-1000 ease-in-out hover:w-full hover:delay-0 '>
+          <div className='h-14 w-14 max-w-screen rounded-full flex border-2 border-green-500/50 backdrop-blur-sm bg-white/10 items-center overflow-hidden whitespace-nowrap origin-right transition-all duration-500 delay-1000 ease-in-out hover:w-full active:w-full hover:delay-0 active:delay-0 '>
             <img src='./bugsucks.png' className='shrink-0 h-14 w-14 p-3' />
             <nav className='flex items-center justify-evenly gap-6 mx-4 overflow-hidden'>
               {navLinks.map((link) =>
