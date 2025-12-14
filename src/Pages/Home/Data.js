@@ -22,13 +22,8 @@ export const badges = [
     label: "Skills",
     sub: "Expert",
     link: "/skills",
-    position: "bottom-20 -left-12",
+    position: "bott -left-12",
   },
-  {
-    label: "100+ AI - Agents",
-    sub: "Expert",
-    link: "/skills/react",
-    position: "bottom-20 -left-12",
-  },
+
  
 ];
