@@ -19,9 +19,9 @@ export const badges = [
     position: "top-8 -right-12",
   },
   {
-    label: "React",
+    label: "Skills",
     sub: "Expert",
-    link: "/skills/react",
+    link: "/skills",
     position: "bottom-20 -left-12",
   },
   {
