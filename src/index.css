@@ -1,0 +1,134 @@
+/** @format */
+
+@import "tailwindcss";
+* {
+  font-family: "Geom", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.hover-underline {
+  position: relative;
+  display: inline-block;
+}
+
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: rgb(56, 94, 0);
+  bottom: -2px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s ease-out;
+}
+
+.hover-underline::after {
+  
+  transform-origin: left;
+}
+
+.hover-underline:hover::after {
+  transform: scaleX(1);
+}
+
+
+/* Card styling */
+.body {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="4" fill="%23ff7eb3" /><circle cx="4" cy="4" r="2" fill="%23ff758c" /><circle cx="16" cy="16" r="2" fill="%23ff758c" /></svg>') repeat;
+  background-size: 150px 150px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: bl;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.5s ease;
+  animation: move-and-color 3s linear infinite;
+}
+
+/* Keyframe animation for moving and changing colors */
+@keyframes move-and-color {
+  0% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="4" fill="%23ff7eb3" /><circle cx="4" cy="4" r="2" fill="%23ff758c" /><circle cx="16" cy="16" r="2" fill="%23ff758c" /></svg>');
+    background-position: 0 0;
+  }
+  50% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="4" fill="%23ffcc00" /><circle cx="4" cy="4" r="2" fill="%2300ccff" /><circle cx="16" cy="16" r="2" fill="%23ff33cc" /></svg>');
+    background-position: 25px 25px;
+  }
+  100% {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="4" fill="%2300ffaa" /><circle cx="4" cy="4" r="2" fill="%23ff0066" /><circle cx="16" cy="16" r="2" fill="%23ff6600" /></svg>');
+    background-position: 50px 50px;
+  }
+}
+
+
+.sun {
+  background-color: rgba(179, 246, 22, 0.523);
+  opacity: 0.3;
+  position: absolute;
+  top: -1050px;
+  left: -300px;
+  width: 2200px;
+  height: 1200px;
+  border-radius: 50%;
+  animation-name: sunrise2;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+.sun2 {
+  background-color: rgba(14, 170, 0, 0.559);
+  opacity: 0.3;
+  position: absolute;
+  top: -1050px;
+  left: -1200px;
+  width: 2200px;
+  height: 1200px;
+  border-radius: 50%;
+  animation-name: sunrise2;
+  animation-duration: 14s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+.sun3 {
+  background-color: rgba(19, 255, 145, 0.451);
+  opacity: 0.3;
+  position: absolute;
+  top: -1050px;
+  left: -600px;
+  width: 2200px;
+  height: 1200px;
+  border-radius: 50%;
+  animation-name: sunrise2;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes sunrise2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(150px, 50px);
+  }
+  50% {
+    transform: translate(300px, 10px);
+  }
+  75% {
+    transform: translate(150px, 50px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
